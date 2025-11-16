@@ -1,0 +1,13 @@
+name: covid-predictors
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.13
+  - scikit-learn
+  - pandas
+  - matplotlib
+  - jupyterlab
+  - pip
+  - pip:
+    - xgboost

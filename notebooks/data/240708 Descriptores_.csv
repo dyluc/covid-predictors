@@ -1,0 +1,44 @@
+No,VARIABLE_NAME,VARIABLE_DESCRIPTION,FORMAT_SOURCE,OBSERVATION
+1,FECHA_ACTUALIZACION,The database is updated daily; this variable identifies the date of the last update.,YYYY-MM-DD,-
+2,ID_REGISTRO,Case identifier number,TEXT,-
+3,ORIGEN,"Sentinel surveillance is carried out through the system of health units monitoring respiratory diseases (USMER). USMER includes medical units of the first, second or third level of care, and also third-level units that contribute to expanding epidemiological information, including those with pneumology, infectology or paediatrics specialties.",CATALOGUE: ORIGEN,-
+4,SECTOR,Identifies the type of National Health System institution that provided care.,CATALOGUE: SECTOR,-
+5,ENTIDAD_UM,Identifies the state where the medical unit that provided care is located.,CATALOGUE: ENTITIES,-
+6,SEXO,Identifies the patient's sex.,CATALOGUE: SEX,-
+7,ENTIDAD_NAC,Identifies the patient's state of birth.,CATALOGUE: ENTITIES,-
+8,ENTIDAD_RES,Identifies the patient's state of residence.,CATALOGUE: ENTITIES,-
+9,MUNICIPIO_RES,Identifies the patient's municipality of residence.,CATALOGUE: MUNICIPALITIES,-
+10,TIPO_PACIENTE,Identifies the type of care the patient received at the unit. Classified as outpatient if they returned home or hospitalised if admitted to hospital.,CATALOGUE: TIPO_PACIENTE,-
+11,FECHA_INGRESO,Identifies the patient's admission date to the care unit.,YYYY-MM-DD,-
+12,FECHA_SINTOMAS,Identifies the date when the patient's symptoms began.,YYYY-MM-DD,-
+13,FECHA_DEF,Identifies the date the patient died.,YYYY-MM-DD,-
+14,INTUBADO,Identifies whether the patient required intubation.,CATALOGUE: YES_NO,-
+15,NEUMONIA,Identifies whether the patient was diagnosed with pneumonia.,CATALOGUE: YES_NO,-
+16,EDAD,Identifies the patient's age.,NUMERIC IN YEARS,-
+17,NACIONALIDAD,Identifies whether the patient is Mexican or foreign.,CATALOGUE: NATIONALITY,-
+18,EMBARAZO,Identifies whether the patient is pregnant.,CATALOGUE: YES_NO,-
+19,HABLA_LENGUA_INDIG,Identifies whether the patient speaks an indigenous language.,CATALOGUE: YES_NO,-
+20,INDIGENA,Identifies whether the patient self-identifies as an indigenous person.,CATALOGUE: YES_NO,-
+21,DIABETES,Identifies whether the patient has a diagnosis of diabetes.,CATALOGUE: YES_NO,-
+22,EPOC,Identifies whether the patient has a diagnosis of COPD (Chronic Obstructive Pulmonary Disease).,CATALOGUE: YES_NO,-
+23,ASMA,Identifies whether the patient has a diagnosis of asthma.,CATALOGUE: YES_NO,-
+24,INMUSUPR,Identifies whether the patient has immunosuppression.,CATALOGUE: YES_NO,-
+25,HIPERTENSION,Identifies whether the patient has a diagnosis of hypertension.,CATALOGUE: YES_NO,-
+26,OTRA_COM,Identifies whether the patient has a diagnosis of other diseases.,CATALOGUE: YES_NO,-
+27,CARDIOVASCULAR,Identifies whether the patient has a diagnosis of cardiovascular diseases.,CATALOGUE: YES_NO,-
+28,OBESIDAD,Identifies whether the patient has a diagnosis of obesity.,CATALOGUE: YES_NO,-
+29,RENAL_CRONICA,Identifies whether the patient has a diagnosis of chronic renal failure.,CATALOGUE: YES_NO,-
+30,TABAQUISMO,Identifies whether the patient has a smoking habit.,CATALOGUE: YES_NO,-
+31,OTRO_CASO,Identifies whether the patient had contact with another case diagnosed with SARS-CoV-2.,CATALOGUE: YES_NO,-
+32,TOMA_MUESTRA_LAB,Identifies whether a laboratory sample was taken from the patient.,CATALOGUE: YES_NO,-
+-,RESULTADO_LAB,"Identifies the SARS-COV-2 virus result from sample analysis reported by the National Laboratory Network for Epidemiological Surveillance (INDRE, LESP and LAVE) and private laboratories endorsed by InDRE whose results are recorded in SISVER.",CATALOGUE: RESULTADO_LAB,Variable removed from open data in July 2024 and replaced by: RESULTADO_PCR and RESULTADO_PCR_COINFECCION
+33,RESULTADO_PCR,"Identifies the patient's sample result for different respiratory viruses analysed in the National Laboratory Network for Epidemiological Surveillance (INDRE, LESP and LAVE) and private laboratories endorsed by InDRE whose results are recorded in SISVER.",CATALOGUE: RESULTADO_PCR,Updated in July 2024
+34,RESULTADO_PCR_COINFECCION,"Identifies a coinfection (simultaneous infection) found in the patient's sample for different respiratory viruses analysed in the National Laboratory Network for Epidemiological Surveillance (INDRE, LESP and LAVE) and private laboratories endorsed by InDRE whose results are recorded in SISVER.",CATALOGUE: RESULTADO_PCR,Updated in July 2024
+35,TOMA_MUESTRA_ANTIGENO,Identifies whether an antigen sample for SARS-CoV-2 was taken from the patient.,CATALOGUE: YES_NO,Updated in November 2020
+36,RESULTADO_ANTIGENO,Identifies the result of the antigen sample analysis taken from the patient.,CATALOGUE: RESULTADO_ANTIGENO,Updated in November 2020
+37,CLASIFICACION_FINAL_COVID,"Identifies whether the patient is a COVID-19 case according to the ""CLASIFICACION_FINAL_COVID"" catalogue.",CATALOGUE: CLASIFICACION_FINAL_COVID,"Updated in July 2024: Name changed from CLASIFICACIÓN FINAL to CLASIFICACIÓN_FINAL_COVID. Likewise, catalogue name changed from CLASIFICACION_FINAL to CLASIFICACION_FINAL_COVID"
+38,CLASIFICACION_FINAL_FLU,"Identifies whether the patient is an influenza case according to the ""CLASIFICACION_FINAL_FLU"" catalogue.",CATALOGUE: CLASIFICACION_FINAL_FLU,Updated in July 2024
+39,MIGRANTE,Identifies whether the patient is a migrant.,CATALOGUE: YES_NO,-
+40,PAIS_NACIONALIDAD,Identifies the patient's nationality.,"TEXT, 99 = UNKNOWN",-
+41,PAIS_ORIGEN,Identifies the country from which the patient departed en route to Mexico.,"TEXT, 97 = NOT APPLICABLE",-
+42,UCI,Identifies whether the patient required admission to an Intensive Care Unit.,CATALOGUE: YES_NO,-
