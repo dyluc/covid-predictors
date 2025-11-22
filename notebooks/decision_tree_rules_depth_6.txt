@@ -1,0 +1,346 @@
+|----- bin__pneumonia_remapped <= 0.50
+|     |----- remainder__age <= 67.50
+|     |     |----- bin__immunosuppressed_remapped <= 0.50
+|     |     |     |----- bin__other_comorbidity_remapped <= 0.50
+|     |     |     |     |----- bin__chronic_kidney_disease_remapped <= 0.50
+|     |     |     |     |     |----- remainder__age <= 1.50
+|     |     |     |     |     |     |----- bin__cardiovascular_disease_remapped <= 0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 11
+|     |     |     |     |     |     |----- bin__cardiovascular_disease_remapped >  0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 5
+|     |     |     |     |     |----- remainder__age >  1.50
+|     |     |     |     |     |     |----- bin__asthma_remapped <= 0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 25
+|     |     |     |     |     |     |----- bin__asthma_remapped >  0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 25
+|     |     |     |     |----- bin__chronic_kidney_disease_remapped >  0.50
+|     |     |     |     |     |----- bin__contact_with_covid_case_remapped <= 0.50
+|     |     |     |     |     |     |----- bin__hypertension_remapped <= 0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 22
+|     |     |     |     |     |     |----- bin__hypertension_remapped >  0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 16
+|     |     |     |     |     |----- bin__contact_with_covid_case_remapped >  0.50
+|     |     |     |     |     |     |----- bin__asthma_remapped <= 0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 16
+|     |     |     |     |     |     |----- bin__asthma_remapped >  0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 2
+|     |     |     |----- bin__other_comorbidity_remapped >  0.50
+|     |     |     |     |----- remainder__age <= 21.50
+|     |     |     |     |     |----- remainder__age <= 5.50
+|     |     |     |     |     |     |----- bin__diabetes_remapped <= 0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 10
+|     |     |     |     |     |     |----- bin__diabetes_remapped >  0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 2
+|     |     |     |     |     |----- remainder__age >  5.50
+|     |     |     |     |     |     |----- bin__copd_remapped <= 0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 16
+|     |     |     |     |     |     |----- bin__copd_remapped >  0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 2
+|     |     |     |     |----- remainder__age >  21.50
+|     |     |     |     |     |----- preg__pregnant_remapped <= 0.50
+|     |     |     |     |     |     |----- bin__contact_with_covid_case_remapped <= 0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 18
+|     |     |     |     |     |     |----- bin__contact_with_covid_case_remapped >  0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 20
+|     |     |     |     |     |----- preg__pregnant_remapped >  0.50
+|     |     |     |     |     |     |----- remainder__age <= 61.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 22
+|     |     |     |     |     |     |----- remainder__age >  61.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 8
+|     |     |----- bin__immunosuppressed_remapped >  0.50
+|     |     |     |----- preg__pregnant_remapped <= 0.50
+|     |     |     |     |----- remainder__age <= 28.50
+|     |     |     |     |     |----- bin__chronic_kidney_disease_remapped <= 0.50
+|     |     |     |     |     |     |----- remainder__age <= 2.50
+|     |     |     |     |     |     |     |----- class: 1
+|     |     |     |     |     |     |----- remainder__age >  2.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 13
+|     |     |     |     |     |----- bin__chronic_kidney_disease_remapped >  0.50
+|     |     |     |     |     |     |----- class: 1
+|     |     |     |     |----- remainder__age >  28.50
+|     |     |     |     |     |----- bin__other_comorbidity_remapped <= 0.50
+|     |     |     |     |     |     |----- remainder__age <= 52.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 14
+|     |     |     |     |     |     |----- remainder__age >  52.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 12
+|     |     |     |     |     |----- bin__other_comorbidity_remapped >  0.50
+|     |     |     |     |     |     |----- bin__smoking_remapped <= 0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 11
+|     |     |     |     |     |     |----- bin__smoking_remapped >  0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 5
+|     |     |     |----- preg__pregnant_remapped >  0.50
+|     |     |     |     |----- bin__other_comorbidity_remapped <= 0.50
+|     |     |     |     |     |----- remainder__age <= 60.50
+|     |     |     |     |     |     |----- bin__diabetes_remapped <= 0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 18
+|     |     |     |     |     |     |----- bin__diabetes_remapped >  0.50
+|     |     |     |     |     |     |     |----- class: 1
+|     |     |     |     |     |----- remainder__age >  60.50
+|     |     |     |     |     |     |----- bin__hypertension_remapped <= 0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 8
+|     |     |     |     |     |     |----- bin__hypertension_remapped >  0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 8
+|     |     |     |     |----- bin__other_comorbidity_remapped >  0.50
+|     |     |     |     |     |----- bin__copd_remapped <= 0.50
+|     |     |     |     |     |     |----- remainder__age <= 39.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 9
+|     |     |     |     |     |     |----- remainder__age >  39.50
+|     |     |     |     |     |     |     |----- class: 1
+|     |     |     |     |     |----- bin__copd_remapped >  0.50
+|     |     |     |     |     |     |----- bin__diabetes_remapped <= 0.50
+|     |     |     |     |     |     |     |----- class: 1
+|     |     |     |     |     |     |----- bin__diabetes_remapped >  0.50
+|     |     |     |     |     |     |     |----- class: 0
+|     |----- remainder__age >  67.50
+|     |     |----- remainder__age <= 74.50
+|     |     |     |----- bin__chronic_kidney_disease_remapped <= 0.50
+|     |     |     |     |----- bin__copd_remapped <= 0.50
+|     |     |     |     |     |----- bin__immunosuppressed_remapped <= 0.50
+|     |     |     |     |     |     |----- bin__smoking_remapped <= 0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 14
+|     |     |     |     |     |     |----- bin__smoking_remapped >  0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 14
+|     |     |     |     |     |----- bin__immunosuppressed_remapped >  0.50
+|     |     |     |     |     |     |----- preg__pregnant_remapped <= 1.00
+|     |     |     |     |     |     |     |----- truncated branch of depth 6
+|     |     |     |     |     |     |----- preg__pregnant_remapped >  1.00
+|     |     |     |     |     |     |     |----- truncated branch of depth 9
+|     |     |     |     |----- bin__copd_remapped >  0.50
+|     |     |     |     |     |----- bin__contact_with_covid_case_remapped <= 0.50
+|     |     |     |     |     |     |----- bin__smoking_remapped <= 0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 11
+|     |     |     |     |     |     |----- bin__smoking_remapped >  0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 5
+|     |     |     |     |     |----- bin__contact_with_covid_case_remapped >  0.50
+|     |     |     |     |     |     |----- bin__hypertension_remapped <= 0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 7
+|     |     |     |     |     |     |----- bin__hypertension_remapped >  0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 4
+|     |     |     |----- bin__chronic_kidney_disease_remapped >  0.50
+|     |     |     |     |----- bin__hypertension_remapped <= 0.50
+|     |     |     |     |     |----- remainder__age <= 68.50
+|     |     |     |     |     |     |----- preg__pregnant_remapped <= 1.00
+|     |     |     |     |     |     |     |----- class: 1
+|     |     |     |     |     |     |----- preg__pregnant_remapped >  1.00
+|     |     |     |     |     |     |     |----- truncated branch of depth 3
+|     |     |     |     |     |----- remainder__age >  68.50
+|     |     |     |     |     |     |----- bin__other_comorbidity_remapped <= 0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 9
+|     |     |     |     |     |     |----- bin__other_comorbidity_remapped >  0.50
+|     |     |     |     |     |     |     |----- class: 1
+|     |     |     |     |----- bin__hypertension_remapped >  0.50
+|     |     |     |     |     |----- bin__obesity_remapped <= 0.50
+|     |     |     |     |     |     |----- bin__sex_remapped <= 0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 9
+|     |     |     |     |     |     |----- bin__sex_remapped >  0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 8
+|     |     |     |     |     |----- bin__obesity_remapped >  0.50
+|     |     |     |     |     |     |----- bin__other_comorbidity_remapped <= 0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 7
+|     |     |     |     |     |     |----- bin__other_comorbidity_remapped >  0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 2
+|     |     |----- remainder__age >  74.50
+|     |     |     |----- bin__copd_remapped <= 0.50
+|     |     |     |     |----- remainder__age <= 83.50
+|     |     |     |     |     |----- bin__chronic_kidney_disease_remapped <= 0.50
+|     |     |     |     |     |     |----- bin__cardiovascular_disease_remapped <= 0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 18
+|     |     |     |     |     |     |----- bin__cardiovascular_disease_remapped >  0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 14
+|     |     |     |     |     |----- bin__chronic_kidney_disease_remapped >  0.50
+|     |     |     |     |     |     |----- preg__pregnant_remapped <= 1.00
+|     |     |     |     |     |     |     |----- truncated branch of depth 15
+|     |     |     |     |     |     |----- preg__pregnant_remapped >  1.00
+|     |     |     |     |     |     |     |----- truncated branch of depth 10
+|     |     |     |     |----- remainder__age >  83.50
+|     |     |     |     |     |----- bin__immunosuppressed_remapped <= 0.50
+|     |     |     |     |     |     |----- bin__contact_with_covid_case_remapped <= 0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 18
+|     |     |     |     |     |     |----- bin__contact_with_covid_case_remapped >  0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 16
+|     |     |     |     |     |----- bin__immunosuppressed_remapped >  0.50
+|     |     |     |     |     |     |----- bin__diabetes_remapped <= 0.50
+|     |     |     |     |     |     |     |----- class: 1
+|     |     |     |     |     |     |----- bin__diabetes_remapped >  0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 4
+|     |     |     |----- bin__copd_remapped >  0.50
+|     |     |     |     |----- bin__diabetes_remapped <= 0.50
+|     |     |     |     |     |----- bin__hypertension_remapped <= 0.50
+|     |     |     |     |     |     |----- bin__contact_with_covid_case_remapped <= 0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 17
+|     |     |     |     |     |     |----- bin__contact_with_covid_case_remapped >  0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 11
+|     |     |     |     |     |----- bin__hypertension_remapped >  0.50
+|     |     |     |     |     |     |----- remainder__age <= 76.50
+|     |     |     |     |     |     |     |----- class: 1
+|     |     |     |     |     |     |----- remainder__age >  76.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 15
+|     |     |     |     |----- bin__diabetes_remapped >  0.50
+|     |     |     |     |     |----- bin__obesity_remapped <= 0.50
+|     |     |     |     |     |     |----- bin__sex_remapped <= 0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 14
+|     |     |     |     |     |     |----- bin__sex_remapped >  0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 13
+|     |     |     |     |     |----- bin__obesity_remapped >  0.50
+|     |     |     |     |     |     |----- remainder__age <= 76.50
+|     |     |     |     |     |     |     |----- class: 1
+|     |     |     |     |     |     |----- remainder__age >  76.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 11
+|----- bin__pneumonia_remapped >  0.50
+|     |----- remainder__age <= 4.50
+|     |     |----- remainder__age <= 0.50
+|     |     |     |----- bin__sex_remapped <= 0.50
+|     |     |     |     |----- bin__chronic_kidney_disease_remapped <= 0.50
+|     |     |     |     |     |----- bin__other_comorbidity_remapped <= 0.50
+|     |     |     |     |     |     |----- bin__cardiovascular_disease_remapped <= 0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 7
+|     |     |     |     |     |     |----- bin__cardiovascular_disease_remapped >  0.50
+|     |     |     |     |     |     |     |----- class: 1
+|     |     |     |     |     |----- bin__other_comorbidity_remapped >  0.50
+|     |     |     |     |     |     |----- class: 1
+|     |     |     |     |----- bin__chronic_kidney_disease_remapped >  0.50
+|     |     |     |     |     |----- bin__hypertension_remapped <= 0.50
+|     |     |     |     |     |     |----- class: 1
+|     |     |     |     |     |----- bin__hypertension_remapped >  0.50
+|     |     |     |     |     |     |----- class: 0
+|     |     |     |----- bin__sex_remapped >  0.50
+|     |     |     |     |----- bin__contact_with_covid_case_remapped <= 0.50
+|     |     |     |     |     |----- bin__cardiovascular_disease_remapped <= 0.50
+|     |     |     |     |     |     |----- bin__other_comorbidity_remapped <= 0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 5
+|     |     |     |     |     |     |----- bin__other_comorbidity_remapped >  0.50
+|     |     |     |     |     |     |     |----- class: 1
+|     |     |     |     |     |----- bin__cardiovascular_disease_remapped >  0.50
+|     |     |     |     |     |     |----- class: 1
+|     |     |     |     |----- bin__contact_with_covid_case_remapped >  0.50
+|     |     |     |     |     |----- bin__cardiovascular_disease_remapped <= 0.50
+|     |     |     |     |     |     |----- bin__immunosuppressed_remapped <= 0.50
+|     |     |     |     |     |     |     |----- class: 1
+|     |     |     |     |     |     |----- bin__immunosuppressed_remapped >  0.50
+|     |     |     |     |     |     |     |----- class: 1
+|     |     |     |     |     |----- bin__cardiovascular_disease_remapped >  0.50
+|     |     |     |     |     |     |----- class: 1
+|     |     |----- remainder__age >  0.50
+|     |     |     |----- bin__other_comorbidity_remapped <= 0.50
+|     |     |     |     |----- bin__contact_with_covid_case_remapped <= 0.50
+|     |     |     |     |     |----- bin__sex_remapped <= 0.50
+|     |     |     |     |     |     |----- bin__asthma_remapped <= 0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 10
+|     |     |     |     |     |     |----- bin__asthma_remapped >  0.50
+|     |     |     |     |     |     |     |----- class: 1
+|     |     |     |     |     |----- bin__sex_remapped >  0.50
+|     |     |     |     |     |     |----- bin__asthma_remapped <= 0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 12
+|     |     |     |     |     |     |----- bin__asthma_remapped >  0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 5
+|     |     |     |     |----- bin__contact_with_covid_case_remapped >  0.50
+|     |     |     |     |     |----- bin__chronic_kidney_disease_remapped <= 0.50
+|     |     |     |     |     |     |----- remainder__age <= 3.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 10
+|     |     |     |     |     |     |----- remainder__age >  3.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 4
+|     |     |     |     |     |----- bin__chronic_kidney_disease_remapped >  0.50
+|     |     |     |     |     |     |----- class: 0
+|     |     |     |----- bin__other_comorbidity_remapped >  0.50
+|     |     |     |     |----- bin__cardiovascular_disease_remapped <= 0.50
+|     |     |     |     |     |----- remainder__age <= 3.50
+|     |     |     |     |     |     |----- remainder__age <= 2.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 6
+|     |     |     |     |     |     |----- remainder__age >  2.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 5
+|     |     |     |     |     |----- remainder__age >  3.50
+|     |     |     |     |     |     |----- class: 1
+|     |     |     |     |----- bin__cardiovascular_disease_remapped >  0.50
+|     |     |     |     |     |----- remainder__age <= 3.00
+|     |     |     |     |     |     |----- preg__pregnant_remapped <= 1.00
+|     |     |     |     |     |     |     |----- class: 1
+|     |     |     |     |     |     |----- preg__pregnant_remapped >  1.00
+|     |     |     |     |     |     |     |----- truncated branch of depth 4
+|     |     |     |     |     |----- remainder__age >  3.00
+|     |     |     |     |     |     |----- preg__pregnant_remapped <= 1.00
+|     |     |     |     |     |     |     |----- truncated branch of depth 2
+|     |     |     |     |     |     |----- preg__pregnant_remapped >  1.00
+|     |     |     |     |     |     |     |----- class: 1
+|     |----- remainder__age >  4.50
+|     |     |----- remainder__age <= 62.50
+|     |     |     |----- remainder__age <= 21.50
+|     |     |     |     |----- remainder__age <= 19.50
+|     |     |     |     |     |----- remainder__age <= 17.50
+|     |     |     |     |     |     |----- bin__obesity_remapped <= 0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 16
+|     |     |     |     |     |     |----- bin__obesity_remapped >  0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 8
+|     |     |     |     |     |----- remainder__age >  17.50
+|     |     |     |     |     |     |----- bin__chronic_kidney_disease_remapped <= 0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 13
+|     |     |     |     |     |     |----- bin__chronic_kidney_disease_remapped >  0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 2
+|     |     |     |     |----- remainder__age >  19.50
+|     |     |     |     |     |----- bin__obesity_remapped <= 0.50
+|     |     |     |     |     |     |----- preg__pregnant_remapped <= 1.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 6
+|     |     |     |     |     |     |----- preg__pregnant_remapped >  1.50
+|     |     |     |     |     |     |     |----- class: 1
+|     |     |     |     |     |----- bin__obesity_remapped >  0.50
+|     |     |     |     |     |     |----- bin__smoking_remapped <= 0.50
+|     |     |     |     |     |     |     |----- class: 1
+|     |     |     |     |     |     |----- bin__smoking_remapped >  0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 2
+|     |     |     |----- remainder__age >  21.50
+|     |     |     |     |----- bin__other_comorbidity_remapped <= 0.50
+|     |     |     |     |     |----- bin__contact_with_covid_case_remapped <= 0.50
+|     |     |     |     |     |     |----- remainder__age <= 42.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 17
+|     |     |     |     |     |     |----- remainder__age >  42.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 21
+|     |     |     |     |     |----- bin__contact_with_covid_case_remapped >  0.50
+|     |     |     |     |     |     |----- bin__immunosuppressed_remapped <= 0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 20
+|     |     |     |     |     |     |----- bin__immunosuppressed_remapped >  0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 5
+|     |     |     |     |----- bin__other_comorbidity_remapped >  0.50
+|     |     |     |     |     |----- remainder__age <= 56.50
+|     |     |     |     |     |     |----- remainder__age <= 22.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 3
+|     |     |     |     |     |     |----- remainder__age >  22.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 11
+|     |     |     |     |     |----- remainder__age >  56.50
+|     |     |     |     |     |     |----- bin__cardiovascular_disease_remapped <= 0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 10
+|     |     |     |     |     |     |----- bin__cardiovascular_disease_remapped >  0.50
+|     |     |     |     |     |     |     |----- class: 1
+|     |     |----- remainder__age >  62.50
+|     |     |     |----- remainder__age <= 98.50
+|     |     |     |     |----- bin__smoking_remapped <= 0.50
+|     |     |     |     |     |----- bin__contact_with_covid_case_remapped <= 0.50
+|     |     |     |     |     |     |----- bin__obesity_remapped <= 0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 19
+|     |     |     |     |     |     |----- bin__obesity_remapped >  0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 15
+|     |     |     |     |     |----- bin__contact_with_covid_case_remapped >  0.50
+|     |     |     |     |     |     |----- remainder__age <= 82.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 11
+|     |     |     |     |     |     |----- remainder__age >  82.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 15
+|     |     |     |     |----- bin__smoking_remapped >  0.50
+|     |     |     |     |     |----- bin__diabetes_remapped <= 0.50
+|     |     |     |     |     |     |----- bin__copd_remapped <= 0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 17
+|     |     |     |     |     |     |----- bin__copd_remapped >  0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 16
+|     |     |     |     |     |----- bin__diabetes_remapped >  0.50
+|     |     |     |     |     |     |----- remainder__age <= 64.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 9
+|     |     |     |     |     |     |----- remainder__age >  64.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 12
+|     |     |     |----- remainder__age >  98.50
+|     |     |     |     |----- bin__asthma_remapped <= 0.50
+|     |     |     |     |     |----- remainder__age <= 101.50
+|     |     |     |     |     |     |----- bin__diabetes_remapped <= 0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 5
+|     |     |     |     |     |     |----- bin__diabetes_remapped >  0.50
+|     |     |     |     |     |     |     |----- truncated branch of depth 2
+|     |     |     |     |     |----- remainder__age >  101.50
+|     |     |     |     |     |     |----- class: 1
+|     |     |     |     |----- bin__asthma_remapped >  0.50
+|     |     |     |     |     |----- class: 0
