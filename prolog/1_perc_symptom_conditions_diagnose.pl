@@ -228,7 +228,6 @@ patient_infected(_, 0.0, 0).
 % == Example Queries ==
 
 /* 
-TODO
 
 score_patient(patient1, Score1), patient_infected(patient1, Proba1, Class1),
 score_patient(patient2, Score2), patient_infected(patient2, Proba2, Class2),
