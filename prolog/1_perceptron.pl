@@ -268,15 +268,72 @@ patient_infected(_, 0.0, 0).
 
 /* 
 
-?- score_patient(patient1, Score1), patient_infected(patient1, Proba1, Class1),
-score_patient(patient2, Score2), patient_infected(patient2, Proba2, Class2),
-score_patient(patient3, Score3), patient_infected(patient3, Proba3, Class3),
-score_patient(patient4, Score4), patient_infected(patient4, Proba4, Class4),
-score_patient(patient5, Score5), patient_infected(patient5, Proba5, Class5),
-score_patient(patient6, Score6), patient_infected(patient6, Proba6, Class6),
-score_patient(patient7, Score7), patient_infected(patient7, Proba7, Class7),
-score_patient(patient8, Score8), patient_infected(patient8, Proba8, Class8).
+Ensure patient symptoms are categorised by severity level correctly:
 
+?- count_symptoms_by_severity(patient1, low, LowCount), 
+   count_symptoms_by_severity(patient1, medium, MedCount), 
+   count_symptoms_by_severity(patient1, high, HighCount).
+LowCount = 2,
+MedCount = 1,
+HighCount = 0.
+
+---
+
+Ensure weighted symptom, risk factor, age and sex scoring work correctly before aggregating:
+
+?- score_patient_severities(patient1, S1), 
+   score_patient_severities(patient4, S4), 
+   score_patient_severities(patient6, S6).
+S1 = 0.15000000000000002,
+S4 = 1.6,
+S6 = 0.345 .
+
+?- score_patient_risk_factors(patient5, R5), 
+   score_patient_risk_factors(patient8, R8).
+R5 = 0.787,
+R8 = 0.036 .
+
+?- score_patient_age(patient1, A1), 
+   score_patient_age(patient2, A2).
+A1 = 0.15,
+A2 = 0.03.
+
+?- score_patient_sex(patient1, Sex1), 
+   score_patient_sex(patient2, Sex2).
+Sex1 = 0.023,
+Sex2 = 0.015.
+
+---
+
+Ensure the Sigmoid centre point maps to exactly 0.5 probability:
+
+?- calculate_infected_probability(0.2, P2), 
+   calculate_infected_probability(0.5, P5), 
+   calculate_infected_probability(1.0, P10).
+P2 = 0.5,
+P5 = 0.574442516811659,
+P10 = 0.6899744811276125.
+
+---
+
+Patient 5 is a special case, with high risk factors but no symptoms (must be classified negative):
+
+?- score_patient_risk_factors(patient5, RiskScore), 
+   patient_infected(patient5, Probability, Classification).
+RiskScore = 0.787,
+Probability = 0.0,
+Classification = 0 .
+
+Final scoring, infected probabilities and classifications for all patients:
+
+?- score_patient(patient1, Score1), patient_infected(patient1, Proba1, Class1),
+   score_patient(patient2, Score2), patient_infected(patient2, Proba2, Class2),
+   score_patient(patient3, Score3), patient_infected(patient3, Proba3, Class3),
+   score_patient(patient4, Score4), patient_infected(patient4, Proba4, Class4),
+   score_patient(patient5, Score5), patient_infected(patient5, Proba5, Class5),
+   score_patient(patient6, Score6), patient_infected(patient6, Proba6, Class6),
+   score_patient(patient7, Score7), patient_infected(patient7, Proba7, Class7),
+   score_patient(patient8, Score8), patient_infected(patient8, Proba8, Class8).
 Score1 = 0.34234000000000003,
 Proba1 = 0.5355250401347063,
 Class1 = Class3, Class3 = Class4, Class4 = Class6, Class6 = Class7, Class7 = 1,
