@@ -117,7 +117,8 @@ compute_posterior(Fever, AchesAndPains, DifficultyBreathing, Proba) :-
 patient_infected(Fever, AchesAndPains, DifficultyBreathing, Proba, Class) :-
     compute_posterior(Fever, AchesAndPains, DifficultyBreathing, Proba),
     DecisionBoundary = 0.5,
-    (Proba >= DecisionBoundary -> Class = 1 ; Class = 0).
+    (Proba >= DecisionBoundary -> Class = 1 ; Class = 0),
+    !.
 
 /*
 
@@ -125,44 +126,36 @@ Diagnose patient with all symptoms: fever, aches and pains and difficulty breath
 
 ?- patient_infected(fever, aches_and_pains, difficulty_breathing, P, C).
 P = 0.9998496466696737,
-C = 1 ;
-false.
+C = 1.
 
 All other cases:
 
 ?- patient_infected(fever, aches_and_pains, no_difficulty_breathing, P, C).
 P = 0.2594514455151964,
-C = 0 ;
-false.
+C = 0.
 
 ?- patient_infected(fever, no_aches_and_pains, difficulty_breathing, P, C).
 P = 0.9923891956424414,
-C = 1 ;
-false.
+C = 1.
 
 ?- patient_infected(fever, no_aches_and_pains, no_difficulty_breathing, P, C).
 P = 0.006822745082750151,
-C = 0 ;
-false.
+C = 0.
 
 ?- patient_infected(no_fever, aches_and_pains, difficulty_breathing, P, C).
 P = 0.9980156414147309,
-C = 1 ;
-false.
+C = 1.
 
 ?- patient_infected(no_fever, aches_and_pains, no_difficulty_breathing, P, C).
 P = 0.025813113061435213,
-C = 0 ;
-false.
+C = 0.
 
 ?- patient_infected(no_fever, no_aches_and_pains, difficulty_breathing, P, C).
 P = 0.9079324625676968,
-C = 1 ;
-false.
+C = 1.
 
 ?- patient_infected(no_fever, no_aches_and_pains, no_difficulty_breathing, P, C).
 P = 0.0005192808998099431,
-C = 0 ;
-false.
+C = 0.
 
 */
